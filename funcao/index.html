@@ -27,18 +27,36 @@
 
 <body class="bg-gray-50 text-gray-800">
 
-    <!-- Cabeçalho da página -->
-    <header class="bg-white shadow-md p-6">
-        <div class="container mx-auto flex justify-between items-center">
-            <div class="flex items-center gap-4">
-                <!-- Logo do CETAM. O 'onerror' é uma segurança caso a imagem não carregue -->
-                <img src="https://fonteboa.concursoscopec.com.br/images/logo_governo_preto.png" alt="Logo CETAM"
-                    class="h-12" onerror="this.style.display='none'">
-                <!-- Título principal da página -->
-                <h1 class="text-2xl md:text-3xl font-bold text-gray-700">Aprendendo Funções na Prática</h1>
-            </div>
-        </div>
-    </header>
+    <!-- Cabeçalho da página CORRIGIDO -->
+    <!--Colocamos o <header> dentro de uma <div> que tem as classes 'container' e 'mx-auto'.
+  Isso força o cabeçalho a ter a mesma largura máxima e alinhamento central do resto do seu conteúdo.
+-->
+    <div class="container mx-auto px-4 pt-6"> <!-- Adicionamos este container para alinhar o header -->
+
+        <!-- As classes 'flex', 'items-center' e 'justify-between' no header organizam os 3 itens (logo, título, logo) -->
+
+        <!-- 'justify-between' distribui o espaço: um item na esquerda, um no centro e um na direita. -->
+        <header class="bg-white shadow-md p-3 rounded-lg flex items-center justify-between">
+
+            <!-- Logo à esquerda -->
+            <a href="https://www.amazonas.am.gov.br/" target="_blank" rel="noopener">
+                <img src="https://fonteboa.concursoscopec.com.br/images/logo_governo_preto.png"
+                    alt="Logo Governo do Amazonas" class="h-10" onerror="this.style.display='none'">
+            </a>
+
+            <!-- Título Centralizado -->
+            <h1 class="text-2xl md:text-3xl font-bold text-gray-700 text-center">
+                Aprendendo Funções na Prática
+            </h1>
+
+            <!-- Logo à direita -->
+            <a href="https://www.cetam.am.gov.br/" target="_blank" rel="noopener">
+                <img src="https://apstatic.prodam.am.gov.br/images/cetam/cetam-logo.svg" alt="Logo CETAM" class="h-10"
+                    onerror="this.style.display='none'">
+            </a>
+
+        </header>
+    </div>
 
     <!-- Conteúdo principal da página -->
     <main class="container mx-auto p-4 md:p-8">
@@ -317,8 +335,10 @@
             <p class="text-sm text-gray-400">Aluno CETAM - Benjamin Constant</p>
             <!-- Div para organizar os ícones das redes sociais -->
             <div class="flex justify-center items-center space-x-6 mt-4">
+
                 <!-- Link para o YouTube (substitua '#' pelo seu link) -->
-                <a href="#" target="_blank" class="hover:text-blue-400 transition-colors" aria-label="YouTube">
+                <a href="https://youtu.be/sKMlTV2aXhc?si=tAxTV_UL5gil4YCF" target="_blank"
+                    class="hover:text-blue-400 transition-colors" aria-label="YouTube">
                     <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
                         stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
                         <path
@@ -327,7 +347,8 @@
                     </svg>
                 </a>
                 <!-- Link para o GitHub (substitua '#' pelo seu link) -->
-                <a href="#" target="_blank" class="hover:text-blue-400 transition-colors" aria-label="GitHub">
+                <a href="https://github.com/Shadowtutor" target="_blank" class="hover:text-blue-400 transition-colors"
+                    aria-label="GitHub">
                     <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
                         stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
                         <path
@@ -335,7 +356,8 @@
                     </svg>
                 </a>
                 <!-- Link para o LinkedIn (substitua '#' pelo seu link) -->
-                <a href="#" target="_blank" class="hover:text-blue-400 transition-colors" aria-label="LinkedIn">
+                <a href="https://www.linkedin.com/in/gilvan-daniel-da-silva-b52637114/" target="_blank"
+                    class="hover:text-blue-400 transition-colors" aria-label="LinkedIn">
                     <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
                         stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
                         <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z" />
