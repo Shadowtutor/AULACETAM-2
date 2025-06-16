@@ -1,0 +1,21 @@
+/*
+  Este arquivo contém os estilos personalizados da página.
+  A maior parte do estilo vem do Tailwind CSS, que é chamado no HTML.
+  Aqui colocamos apenas estilos específicos que o Tailwind não cobre
+  ou que queremos sobrescrever.
+*/
+
+/* Define a fonte 'Inter' para todo o corpo da página, como um padrão. */
+body {
+    font-family: 'Inter', sans-serif;
+}
+
+/* Esta classe é usada nas caixas de código (`<pre>`).
+  'white-space: pre-wrap' garante que o código mantenha as quebras de linha e espaços
+  exatamente como foram escritos, mas quebrando a linha se o texto for muito grande
+  para não criar uma barra de rolagem horizontal.
+*/
+.code-block {
+    white-space: pre-wrap;
+    word-wrap: break-word;
+}
